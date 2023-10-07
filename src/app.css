@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --accent: #0081a7;
+  --on-accent: #ffffff;
+
+  --bg: #ffffff;
+  --on-bg: #000000;
+
+  --headline: 'Karla', sans-serif;
+  --body: 'Fira Sans', sans-serif;
+  --secondary: #161616;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: var(--bg);
+  font-family: var(--body);
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 90%;
+}
+
+p {
+  text-wrap: balance;
+  font-size: clamp(14px, 1.6rem, 1.8rem);
+  font-family: var(--body);
+  line-height: 150%;
+  color: var(--on-bg);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--headline);
+  font-weight: 700;
+  line-height: 75%;
+  text-wrap: balance;
+
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
