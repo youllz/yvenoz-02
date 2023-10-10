@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
 	import Nav from '$lib/components/Nav.svelte';
 	import '../app.css';
 
@@ -38,7 +39,9 @@
 	<slot />
 </main>
 
-<footer />
+<footer>
+	<Footer />
+</footer>
 
 <style>
 	header {

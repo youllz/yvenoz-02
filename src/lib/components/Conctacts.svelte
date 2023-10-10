@@ -1,91 +1,88 @@
-<section id="contacts">
-	<div class="container">
-		<div class="container-left">
-			<span />
-			<h3>Contacts</h3>
-		</div>
-		<div class="container-right">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sed dicta, beatae porro
-				laboriosam pariatur voluptatum animi autem expedita! Quos voluptate aliquid vel at quae rem
-				numquam explicabo exercitationem.
-			</p>
-		</div>
+<section class="container">
+	<div class="left">
+		<figure>
+			<img src="/contact.webp" alt="contact" />
+		</figure>
 	</div>
+	<div class="right">
+		<div class="header">
+			<div class="header-left">
+				<span />
+				<h3>Contacts</h3>
+			</div>
+			<div class="header-right">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sed dicta, beatae
+					porro laboriosam pariatur voluptatum animi autem expedita! Quos voluptate aliquid vel at
+					quae rem numquam explicabo exercitationem.
+				</p>
+			</div>
+		</div>
 
-	<div class="contacts-container">
-		<ul class="social">
-			<li>
-				<a href="mailto:yvenoz.services@outlook.fr" target="_blank"> Mail </a>
-				<span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-						><path
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"
-						/></svg
-					>
-				</span>
-			</li>
-			<li>
-				<a href="https://wa.me/33623381963" target="_blank"> Whatsapp </a>
-				<span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-						><path
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"
-						/></svg
-					>
-				</span>
-			</li>
-			<li>
-				<a href="https://www.facebook.com/profile.php?id=100064108421949" target="_blank">
-					facebook
-				</a>
-				<span>
-					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-						><path
-							fill="none"
-							stroke="currentColor"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"
-						/></svg
-					>
-				</span>
-			</li>
-		</ul>
+		<div class="body">
+			<ul class="social">
+				<li>
+					<a href="https://www.facebook.com/profile.php?id=100064108421949" target="_blank">
+						<span>Facebook</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+								><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+							>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:yvenoz.services@outlook.fr" target="_blank">
+						<span>Mail</span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+								><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+							>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://wa.me/33623381963" target="_blank">
+						<span>Whatsapp</span>
+						<span>
+							<span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+									><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+								>
+							</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="phone">
+				<li><span>+225 07 24 32 09</span></li>
+				<li><span>+225 01 03 69 60 09</span></li>
+				<li><span>33(0) 623 28 19 63</span></li>
+			</ul>
+		</div>
 	</div>
 </section>
 
 <style>
 	section {
+		height: 100dvh;
 		width: 100%;
-		min-height: 100dvh;
-		padding: 5vw;
-		background-color: var(--secondary);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 20vw;
-		gap: 10vw;
-	}
-
-	.container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		max-width: 70%;
+		grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+		grid-template-rows: minmax(30rem, auto);
+		place-content: center;
+		padding: 5vw;
+		gap: 3vw;
 	}
 
-	.container-left {
+	.header {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 80%;
+		gap: 2rem;
+	}
+
+	.header-left {
 		& span {
 			display: inline-block;
 			width: 70%;
@@ -100,58 +97,79 @@
 		}
 	}
 
-	.container-right {
+	.header-right {
 		display: flex;
 		flex-direction: column;
 		gap: 16px;
-
-		& p {
-			color: var(--bg);
+		& h2 {
+			font-size: clamp(3rem, 2vw + 0.1rem, 4rem);
+			line-height: 90%;
+			text-transform: uppercase;
 		}
 	}
 
-	.contacts-container {
+	.left figure,
+	img {
 		width: 100%;
-		margin-top: 6rem;
-		display: flex;
-		align-items: center;
-		justify-items: center;
-		/* background-color: red; */
+		height: 100%;
 	}
 
-	.contacts-container ul {
+	img {
+		object-fit: cover;
+	}
+
+	.body {
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 4vw;
+		margin-top: 8rem;
 	}
 
-	li {
-		position: relative;
+	.social {
 		display: flex;
-		align-items: center;
-		gap: 1rem;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
 
-		& a {
-			width: 100%;
-			height: 100%;
-			color: var(--bg);
-			font-size: clamp(18px, 2vw + 0.1rem, 2.5rem);
-			font-family: var(--headline);
-		}
+	.phone {
+		display: flex;
+		gap: 0.5rem;
+		justify-content: space-between;
 
 		& span {
-			color: var(--accent);
+			font-size: clamp(14px, 1vw + 0.1rem, 1.8rem);
 		}
+	}
+
+	.social li {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+	}
+
+	.social a {
+		width: 100%;
+		transition: all 0.3s ease-out;
+	}
+
+	.social li:hover a {
+		padding-left: 10px;
+	}
+
+	.social li:nth-child(2) a {
+		align-self: flex-end;
+		/* color: red; */
 	}
 
 	.social li::before {
+		content: '';
 		position: absolute;
-		bottom: 0;
-		transition: tranform 0.3s ease-out;
-		transform-origin: left;
-		display: inline-block;
+		height: 2px;
 		width: 100%;
-		height: 3px;
+		display: inline-block;
 		background-color: var(--accent);
+		bottom: -1px;
 	}
 </style>

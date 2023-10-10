@@ -49,6 +49,7 @@ a {
 p {
   text-wrap: balance;
   font-size: clamp(14px, 1.6rem, 1.8rem);
+  font-size: clamp(14px, 1.5vw + 0.1rem, 1.8rem);
   font-family: var(--body);
   line-height: 150%;
   color: var(--on-bg);
