@@ -106,10 +106,10 @@
 	}
 
 	.title {
-		max-width: 80%;
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 		max-width: 70%;
+		gap: 3rem;
 	}
 
 	.title div:nth-child(1) {
@@ -128,8 +128,8 @@
 			font-size: 1.4rem;
 		}
 	}
-
+	/* 
 	p {
 		font-size: 2rem;
-	}
+	} */
 </style>

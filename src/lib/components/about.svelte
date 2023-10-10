@@ -24,9 +24,11 @@
 		justify-content: center;
 	}
 
-	section > div {
+	.container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		/* place-items: center; */
+		gap: 3rem;
 		max-width: 70%;
 	}
 

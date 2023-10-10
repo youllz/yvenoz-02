@@ -67,7 +67,7 @@
 		& p {
 			max-width: 45em;
 			text-align: center;
-			font-size: clamp(14px, 1.8rem, 2rem);
+			font-size: clamp(14px, 1.8vw + 0.1rem, 2rem);
 		}
 	}
 

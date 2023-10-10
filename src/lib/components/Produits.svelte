@@ -70,12 +70,16 @@
 
 	<div class="container">
 		<div class="header">
-			<h3>BARRIERE LEVANTE, PORTE AUTOMATIQUE, <br /> TRIPODE TOURNIQUET</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-				perferendis sequi itaque debitis illo, magni sunt et rerum, voluptatum eum asperiores
-				nostrum eaque temporibus saepe, non natus!
-			</p>
+			<div>
+				<h3>BARRIERE LEVANTE, PORTE AUTOMATIQUE, <br /> TRIPODE TOURNIQUET</h3>
+			</div>
+			<div>
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
+					perferendis sequi itaque debitis illo, magni sunt et rerum, voluptatum eum asperiores
+					nostrum eaque temporibus saepe, non natus!
+				</p>
+			</div>
 		</div>
 
 		<div class="container-products">
@@ -152,6 +156,7 @@
 		flex-direction: column;
 		gap: 10rem;
 		margin-top: 15rem;
+		align-items: center;
 
 		& > div {
 			width: 100%;
@@ -160,13 +165,15 @@
 
 	.header {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		gap: 3rem;
 		margin-top: 7rem;
+		max-width: 70%;
 	}
 
 	.container-products {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, 30rem);
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
 		/* grid-template-rows: minmax(35rem, auto); */
 	}
 

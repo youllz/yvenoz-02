@@ -114,7 +114,8 @@
 
 	section > div {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		gap: 3rem;
 		max-width: 70%;
 	}
 
