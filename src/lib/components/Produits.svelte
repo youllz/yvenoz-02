@@ -195,6 +195,7 @@
 	h3 {
 		font-size: 2rem;
 		line-height: 100%;
+		color: var(--accent);
 	}
 
 	h4 {
