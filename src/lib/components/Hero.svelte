@@ -3,6 +3,8 @@
 
 	let bigText = `Expérience de contrôle transparent
  avec nos solutions d’automatisation`.split(' ');
+
+	const imgs = ['/hero/hero1.webp', '/hero/hero2.webp', '/hero/hero3.webp', '/hero/hero4.webp'];
 </script>
 
 <section>
@@ -18,6 +20,12 @@
 		</p>
 		<Btn />
 	</div>
+
+	{#each imgs as img, idx}
+		<figure class="hero-img{idx}">
+			<img src={img} alt="Door" />
+		</figure>
+	{/each}
 </section>
 
 <style>
@@ -45,6 +53,8 @@
 
 	h1 > span {
 		overflow: hidden;
+		color: var(--bg);
+		mix-blend-mode: difference;
 	}
 
 	.text-container {
@@ -59,5 +69,35 @@
 			text-align: center;
 			font-size: clamp(14px, 1.8rem, 2rem);
 		}
+	}
+
+	figure {
+		position: absolute;
+		height: 30vh;
+		width: 20vw;
+		z-index: -1;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.hero-img0 {
+		top: 10%;
+		left: 10%;
+	}
+	.hero-img1 {
+		top: 10%;
+		right: 10%;
+	}
+	.hero-img2 {
+		bottom: 10%;
+		right: 10%;
+	}
+	.hero-img3 {
+		bottom: 10%;
+		left: 10%;
 	}
 </style>

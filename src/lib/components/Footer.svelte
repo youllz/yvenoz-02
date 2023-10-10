@@ -1,3 +1,20 @@
+<script lang="ts">
+	const url = [
+		{
+			url: '/#acceuil',
+			title: 'ACCEUIL'
+		},
+		{
+			url: '/#services',
+			title: 'SERVICES'
+		},
+		{
+			url: '/#contacts',
+			title: 'CONTACTS'
+		}
+	];
+</script>
+
 <section>
 	<div class="top">
 		<ul>
@@ -20,6 +37,59 @@
 			</li>
 		</ul>
 	</div>
+	<div class="middle">
+		<ul class="social">
+			<li>
+				<a href="https://www.facebook.com/profile.php?id=100064108421949" target="_blank">
+					<span>Facebook</span>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+							><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+						>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="mailto:yvenoz.services@outlook.fr" target="_blank">
+					<span>Mail</span>
+					<span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+							><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+						>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="https://wa.me/33623381963" target="_blank">
+					<span>Whatsapp</span>
+					<span>
+						<span>
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+								><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
+							>
+						</span>
+					</span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="phone">
+			<li><span>+225 07 24 32 09</span></li>
+			<li><span>+225 01 03 69 60 09</span></li>
+			<li><span>33(0) 623 28 19 63</span></li>
+		</ul>
+
+		<ul class="menu">
+			{#each url as item}
+				<li>
+					<a href={item.url}>
+						<span>{item.title}</span>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
+	<div class="bottom" />
 </section>
 
 <style>
@@ -45,5 +115,27 @@
 	.logo {
 		font-family: var(--headline);
 		font-size: 3dvw;
+	}
+
+	.middle {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+		gap: 2rem;
+		place-items: center;
+		color: var(--bg);
+		padding: 2vw 0;
+
+		& ul {
+			display: flex;
+			align-items: center;
+			gap: 2rem;
+		}
+	}
+
+	.phone span,
+	a {
+		font-size: clamp(14px, 1.5vw + 0.1rem, 1.8rem);
+		text-transform: uppercase;
 	}
 </style>
