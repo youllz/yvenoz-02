@@ -52,14 +52,13 @@
 	<div class="right">
 		<div data-state="performance">
 			<div class="header">
-				<h3>SECURITY</h3>
+				<h3>PERFORMANCE</h3>
 				<span />
 			</div>
 			<div>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt dolorum fugiat,
-					voluptates totam, nulla, eveniet quos nisi officia ducimus est libero quam iusto
-					reiciendis illum tempora. Ab, omnis corrupti!
+					Nos produits sont conçus pour une efficacité optimale. Qu'il s'agisse de nos systèmes de
+					portail automatisés, d'ouvre-portes de garage ou d'autres matériels d'automatisation.
 				</p>
 			</div>
 		</div>
@@ -67,27 +66,27 @@
 		<!-- 1 -->
 		<div data-state="fast">
 			<div class="header">
-				<h3>SECURITY</h3>
+				<h3>RAPIDE</h3>
 				<span />
 			</div>
 			<div>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt dolorum fugiat,
-					voluptates totam, nulla, eveniet quos nisi officia ducimus est libero quam iusto
-					reiciendis illum tempora. Ab, omnis corrupti!
+					Des capteurs aux systèmes de contrôle, chaque composant est conçu avec une attention
+					méticuleuse aux détails. Cette précision garantit que nos solutions d’automatisation
+					répondent avec précision, rapidité et cohérence, répondant à vos besoins spécifiques.
 				</p>
 			</div>
 		</div>
 		<div data-state="robust">
 			<div class="header">
-				<h3>SECURITY</h3>
+				<h3>ROBUSTE</h3>
 				<span />
 			</div>
 			<div>
 				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore sunt dolorum fugiat,
-					voluptates totam, nulla, eveniet quos nisi officia ducimus est libero quam iusto
-					reiciendis illum tempora. Ab, omnis corrupti!
+					Lorsqu’il s’agit d’automatisation, la fiabilité n’est pas négociable. Nos matériaux sont
+					conçus pour résister à l’épreuve du temps et fonctionner parfaitement dans diverses
+					conditions.
 				</p>
 			</div>
 		</div>

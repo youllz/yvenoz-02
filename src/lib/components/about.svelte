@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="container-left">
 			<span />
-			<h3>A propos</h3>
+			<span class="h3">A propos</span>
 		</div>
 		<div class="container-right">
 			<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis</h2>
@@ -40,10 +40,11 @@
 			background-color: var(--accent);
 		}
 
-		& h3 {
+		& .h3 {
 			margin-top: 0.5rem;
 			color: var(--accent);
 			font-size: 1.4rem;
+			text-transform: uppercase;
 		}
 	}
 

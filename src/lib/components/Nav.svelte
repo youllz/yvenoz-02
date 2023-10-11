@@ -14,15 +14,15 @@
 
 	const url = [
 		{
-			url: '/#acceuil',
-			title: 'ACCEUIL'
+			url: '#accueil',
+			title: 'ACCUEIL'
 		},
 		{
-			url: '/#services',
+			url: '#services',
 			title: 'SERVICES'
 		},
 		{
-			url: '/#contacts',
+			url: '#contacts',
 			title: 'CONTACTS'
 		}
 	];

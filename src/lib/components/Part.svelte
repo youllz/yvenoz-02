@@ -45,8 +45,8 @@
 		</div>
 		<div>
 			<p>
-				YVENOZ et ses marques partenaires certifie CE, vous garantissent du materiel de qualite et
-				faisons de la satisfaction client notre priorite
+				YVENOZ et ses marques partenaires certifie CE, vous garantissiez du matériel de qualité et
+				faites de la satisfaction client notre priorité
 			</p>
 		</div>
 	</div>
@@ -126,6 +126,7 @@
 			margin-top: 0.5rem;
 			color: var(--accent);
 			font-size: 1.4rem;
+			text-transform: uppercase;
 		}
 	}
 	/* 

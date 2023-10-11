@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container" id="contacts">
 	<div class="left">
 		<figure>
 			<img src="/contact.webp" alt="contact" />
@@ -8,13 +8,13 @@
 		<div class="header">
 			<div class="header-left">
 				<span />
-				<h3>Contacts</h3>
+				<h3>CONTACTS</h3>
 			</div>
 			<div class="header-right">
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sed dicta, beatae
-					porro laboriosam pariatur voluptatum animi autem expedita! Quos voluptate aliquid vel at
-					quae rem numquam explicabo exercitationem.
+					Si vous avez besoin d'une assistance immédiate, notre numéro de téléphone est à votre
+					disposition. Nous comprenons que certaines questions ou préoccupations nécessitent une
+					réponse rapide
 				</p>
 			</div>
 		</div>
@@ -152,6 +152,7 @@
 	.social a {
 		width: 100%;
 		transition: all 0.3s ease-out;
+		text-transform: uppercase;
 	}
 
 	.social li:hover a {

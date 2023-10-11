@@ -63,7 +63,7 @@
 	};
 </script>
 
-<section>
+<section id="produits">
 	<div>
 		<h2>Nos produits</h2>
 	</div>
@@ -76,8 +76,7 @@
 			<div>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-					perferendis sequi itaque debitis illo, magni sunt et rerum, voluptatum eum asperiores
-					nostrum eaque temporibus saepe, non natus!
+					perferendis sequi itaque debitis illo,
 				</p>
 			</div>
 		</div>
@@ -101,8 +100,7 @@
 			<h3>MOTORISATION PORTAIL</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-				perferendis sequi itaque debitis illo, magni sunt et rerum, voluptatum eum asperiores
-				nostrum eaque temporibus saepe, non natus!
+				perferendis sequi itaque debitis illo, magni sunt
 			</p>
 		</div>
 
@@ -124,8 +122,7 @@
 			<h3>BARRIERE LEVANTE PORTE AUTOMATIQUE TRIPODE TOURNIQUET</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-				perferendis sequi itaque debitis illo, magni sunt et rerum, voluptatum eum asperiores
-				nostrum eaque temporibus saepe, non natus!
+				perferendis sequi itaque debitis illo, magni
 			</p>
 		</div>
 
@@ -200,5 +197,6 @@
 
 	h4 {
 		font-size: 1.4rem;
+		text-transform: uppercase;
 	}
 </style>

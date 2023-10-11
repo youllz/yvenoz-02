@@ -1,14 +1,14 @@
 <section>
-	<div class="container">
+	<div class="container" id="services">
 		<div class="container-left">
 			<span />
-			<h3>Services</h3>
+			<h3>SERVICES</h3>
 		</div>
 		<div class="container-right">
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sed dicta, beatae porro
-				laboriosam pariatur voluptatum animi autem expedita! Quos voluptate aliquid vel at quae rem
-				numquam explicabo exercitationem.
+				De l'installation et de la personnalisation à la maintenance et aux réparations, notre gamme
+				de services est conçue pour vous fournir des solutions de bout en bout pour vos systèmes
+				d'automatisation.
 			</p>
 		</div>
 	</div>
@@ -39,8 +39,9 @@
 				</h2>
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod adipisci officia quam
-				eius veniam dolorem fugit architecto esse,
+				Avant de terminer l'installation, notre équipe propose une formation complète à votre
+				personnel ou au personnel qui utilisera les systèmes d'automatisation. Nous voulons nous
+				assurer que vous êtes à l’aise avec le fonctionnement et l’entretien des matériauxs
 			</p>
 		</div>
 		<!--  -->
@@ -63,8 +64,9 @@
 				</h2>
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod adipisci officia quam
-				eius veniam dolorem fugit architecto esse,
+				Notre processus de maintenance commence par des inspections régulières de vos systèmes
+				d'automatisation. Nos techniciens qualifiés effectuent des évaluations approfondies pour
+				identifier tout problème potentiel ou usure.
 			</p>
 		</div>
 		<!--  -->
@@ -92,8 +94,8 @@
 				</h2>
 			</div>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quod adipisci officia quam
-				eius veniam dolorem fugit architecto esse,
+				Notre engagement envers votre satisfaction s'étend au-delà de la réparation elle-même. Nous
+				fournissons une assistance et des conseils après réparation.
 			</p>
 		</div>
 	</div>

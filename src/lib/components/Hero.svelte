@@ -7,7 +7,7 @@
 	const imgs = ['/hero/hero1.webp', '/hero/hero2.webp', '/hero/hero3.webp', '/hero/hero4.webp'];
 </script>
 
-<section>
+<section id="accueil">
 	<div class="text-container">
 		<h1>
 			{#each bigText as item}
@@ -15,8 +15,8 @@
 			{/each}
 		</h1>
 		<p>
-			Votre partenaire en materiels d'automatismes pour portail, porte de garage, barriere levante
-			de parking, porte automatique pietonne et pieces detachees
+			Votre partenaire en matériels d'automatismes pour portail, porte de garage, barrière levante
+			de parking, porte automatique piétonne et pièces détachées.
 		</p>
 		<Btn />
 	</div>
