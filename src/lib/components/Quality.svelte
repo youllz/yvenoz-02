@@ -127,6 +127,7 @@
 		padding: 5vw;
 		background-color: var(--secondary);
 		color: var(--bg);
+		width: 100%;
 	}
 
 	.right > div {
@@ -207,5 +208,16 @@
 		z-index: 3;
 		width: 10rem;
 		height: 10rem;
+	}
+
+
+	@media (width < 800px) {
+		.left {
+			display: none;
+		}
+
+		section {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

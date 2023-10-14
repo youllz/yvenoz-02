@@ -1,7 +1,7 @@
 <section>
 	<div class="container">
 		<div class="container-left">
-			<span />
+			<span class="line" />
 			<span class="h3">A propos</span>
 		</div>
 		<div class="container-right">
@@ -26,14 +26,19 @@
 
 	.container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-		/* place-items: center; */
+		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+		place-content: center;
+		padding: 0 5vw;
 		gap: 3rem;
-		max-width: 70%;
+		/* background-color: red; */
+		
+		max-width: 110rem;
 	}
 
 	.container-left {
-		& span {
+		display: flex;
+		flex-direction: column;
+		& .line {
 			display: inline-block;
 			width: 70%;
 			height: 2px;
@@ -58,4 +63,25 @@
 			text-transform: uppercase;
 		}
 	}
+
+
+	@media (width < 820px) {
+		.container {
+			grid-template-columns: 1fr;
+			width: 100%;
+		}
+
+		 .container-left .line {
+			width: 100% !important;
+		}
+	}
+
+	@media (width < 1310px) {
+		.container {
+			grid-template-columns: 1f;
+			max-width: 90rem;
+		}
+	}
+
+
 </style>

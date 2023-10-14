@@ -65,14 +65,14 @@
 
 <style>
 	section {
-		height: 100dvh;
+		max-height: 110dvh;
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
-		grid-template-rows: minmax(30rem, auto);
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: minmax(20rem, auto);
 		place-content: center;
 		padding: 5vw;
-		gap: 3vw;
+		gap: 3rem;
 	}
 
 	.header {
@@ -108,10 +108,15 @@
 		}
 	}
 
+	figure {
+		height: 50%;
+	}
+
 	.left figure,
 	img {
 		width: 100%;
 		height: 100%;
+		object-position: top;
 	}
 
 	img {
@@ -122,7 +127,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		gap: 4vw;
+		gap: 6vw;
 		margin-top: 8rem;
 	}
 
@@ -172,5 +177,26 @@
 		display: inline-block;
 		background-color: var(--accent);
 		bottom: -1px;
+	}
+
+	@media (width < 860px ) {
+		section {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (width < 450px) {
+		.phone {
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.header {
+			max-width: 100%;
+
+		}
+			.header span {
+				width: 100%;
+			}
 	}
 </style>

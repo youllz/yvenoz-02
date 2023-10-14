@@ -107,18 +107,19 @@
 		min-height: 100dvh;
 		display: flex;
 		flex-direction: column;
-		/* align-items: center; */
+		align-items: center;
 		justify-content: center;
 		align-items: center;
 		background-color: var(--secondary);
-		padding-top: 8vw;
+		padding-top: 15vw;
 	}
 
-	section > div {
+	.container {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
 		gap: 3rem;
-		max-width: 70%;
+		place-content: center;
+		max-width: 100rem;
 	}
 
 	.container-left {
@@ -137,9 +138,6 @@
 	}
 
 	.container-right {
-		display: flex;
-		flex-direction: column;
-		gap: 16px;
 
 		& p {
 			color: var(--bg);
@@ -155,7 +153,7 @@
 		margin-top: 10rem;
 
 		& > div {
-			width: 38rem;
+			max-width: 38rem;
 			display: flex;
 			flex-direction: column;
 			gap: 3.2rem;
@@ -191,5 +189,34 @@
 		& span {
 			font-size: 3rem;
 		}
+	}
+
+	@media (width < 760px) {
+		.container {
+			grid-template-columns: 1fr;
+			max-width: 100%;
+			padding: 5vw;
+		}
+
+		.container span {
+			width: 100%;
+		}
+
+		.container-left {
+			width: 100%;
+		}
+
+		.timeline-container {
+			align-items: center;
+		}
+
+		.timeline-container div:nth-child(2) {
+		align-self: center;
+	}
+
+	.card {
+		width: 100%;
+	}
+	
 	}
 </style>

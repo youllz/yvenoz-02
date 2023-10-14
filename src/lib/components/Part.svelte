@@ -85,17 +85,25 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 16px;
+		flex-wrap: wrap;
+		/* background-color: red; */
+		padding: 0 5vw;
 	}
 
 	.logo-container > div {
+		max-width: 80rem;
+
 		display: flex;
 		align-items: center;
-		gap: 7vw;
+		justify-content: space-around;
+		gap: 3rem;
+		flex-wrap: wrap;
 	}
 
 	figure {
 		width: 100px;
 		height: 100px;
+		flex: 0 0 auto;
 	}
 
 	img {
@@ -107,8 +115,9 @@
 
 	.title {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-		max-width: 70%;
+		max-width: 100rem;
+		place-content: center;
+		grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
 		gap: 3rem;
 	}
 
@@ -129,8 +138,27 @@
 			text-transform: uppercase;
 		}
 	}
-	/* 
-	p {
-		font-size: 2rem;
-	} */
+
+	@media (width < 800px) {
+		figure {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	@media (width < 750px) {
+		.title {
+			grid-template-columns: 1fr;
+			max-width: none;
+			padding: 0 5vw;
+		}
+
+		.title div:nth-child(1) span {
+			width: 100%;
+		}
+
+		section {
+			height: 70dvh;
+		}
+	}
 </style>

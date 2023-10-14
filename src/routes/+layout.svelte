@@ -7,7 +7,7 @@
 </script>
 
 <Nav {navIsOpen} />
-<header>
+<!-- <header>
 	<nav>
 		<div>
 			<a href="/">
@@ -33,7 +33,7 @@
 			</li>
 		</ul>
 	</nav>
-</header>
+</header> -->
 
 <main>
 	<slot />

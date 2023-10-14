@@ -120,7 +120,7 @@
 	.middle {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
 		gap: 2rem;
 		place-items: center;
 		color: var(--bg);
@@ -133,9 +133,37 @@
 		}
 	}
 
+	.phone {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	.phone span,
 	a {
 		font-size: clamp(14px, 1.5vw + 0.1rem, 1.8rem);
 		text-transform: uppercase;
+	}
+
+
+	@media (width < 415px) {
+		.middle {
+			grid-template-columns: 1fr;
+			padding: 20px 10px;
+			
+		}
+
+		.phone {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.phone span,
+	a {
+		font-size: 10px;
+		text-transform: uppercase;
+
+	}
+
 	}
 </style>

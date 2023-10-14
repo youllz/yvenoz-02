@@ -64,9 +64,7 @@
 </script>
 
 <section id="produits">
-	<div>
-		<h2>Nos produits</h2>
-	</div>
+
 
 	<div class="container">
 		<div class="header">
@@ -162,20 +160,24 @@
 
 	.header {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
-		gap: 3rem;
+		max-width: 100rem;
+		grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
+		gap: 5vw;
 		margin-top: 7rem;
-		max-width: 70%;
+		/* background-color: red; */
+		
 	}
 
 	.container-products {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+		/* max-width: 96rem; */
+		gap: 2rem;
 		/* grid-template-rows: minmax(35rem, auto); */
 	}
 
 	.card img {
-		width: 100%;
+		/* width: 100%; */
 		height: 20rem;
 		object-fit: contain;
 	}
@@ -198,5 +200,20 @@
 	h4 {
 		font-size: 1.4rem;
 		text-transform: uppercase;
+		line-height: 130%;
+	}
+
+	@media (width < 700px) {
+		.header {
+			grid-template-columns: 1fr;
+			max-width: 100%;
+		}
+	}
+
+	@media (width < 400px) {
+		.container-products {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 </style>
