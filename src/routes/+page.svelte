@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Conctacts from '$lib/components/Conctacts.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import Part from '$lib/components/Part.svelte';

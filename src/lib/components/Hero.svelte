@@ -8,96 +8,142 @@
 </script>
 
 <section id="accueil">
-	<div class="text-container">
+	<div class="title">
 		<h1>
-			{#each bigText as item}
-				<span><span>{item} </span></span>
-			{/each}
+		<span>
+			Expérience de contrôle transparent
+		</span>
+			
+		<br>
+		<span>
+ 				avec nos solutions 
+		</span>
+			<br>
+		<span>
+			d’automatisation
+		</span>
 		</h1>
-		<p>
-			Votre partenaire en matériels d'automatismes pour portail, porte de garage, barrière levante
-			de parking, porte automatique piétonne et pièces détachées.
-		</p>
-		<Btn />
+		<div class="para">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, enim! Aspernatur quos adipisci dolor laboriosam itaque quibusdam nihil voluptas in pariatur, commodi rem, fuga odit voluptatibus unde velit quaerat recusandae.
+			</p>
+		</div>
 	</div>
-
-	{#each imgs as img, idx}
-		<figure class="hero-img{idx}">
-			<img src={img} alt="Door" />
-		</figure>
-	{/each}
+	<a href="/#contacts">
+		<Btn/>
+	</a>
+	<div class="imgs">
+		{#each imgs as img}
+			<figure>
+				<img src={img} alt="Door ">
+			</figure>
+		{/each}
+	</div>
 </section>
+
+
 
 <style>
 	section {
+		min-height: 100dvh;
+		padding: 22rem 5vw 3rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3.2rem;
+	}
+
+	.title {
 		width: 100%;
-		height: 100dvh;
 		position: relative;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-		justify-content: center;
+		gap: 3.2rem;
 	}
 
 	h1 {
-		font-size: clamp(3rem, 5vw + 0.1rem, 7rem);
-		text-align: center;
-		display: flex;
-		max-width: 80%;
-		flex-wrap: wrap;
-		gap: 13px;
-		justify-content: center;
-		align-items: center;
-		letter-spacing: -2px;
+		font-size: clamp(2.5rem, 4vw + 0.1rem , 10rem);
 		text-transform: uppercase;
+		/* display: flex;
+		flex-wrap: wrap; */
+		line-height: 100%;
+		flex-shrink: 2;
+		/* gap: 15px; */
+
 	}
 
-	h1 > span {
-		overflow: hidden;
-		color: var(--bg);
-		mix-blend-mode: difference;
+	.para {
+		position: absolute;
+		right: 5%;
+		max-width: 50rem;
+		top: 40%;
+		/* background-color: red; */
 	}
-
-	.text-container {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 32px;
-		flex-direction: column;
-
-		& p {
-			max-width: 45em;
-			text-align: center;
-			font-size: clamp(14px, 1.8vw + 0.1rem, 2rem);
-		}
+	
+	
+	.imgs {
+		margin-top: 6rem;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 2rem;
 	}
 
 	figure {
-		position: absolute;
-		height: 30vh;
-		width: 20vw;
-		z-index: -1;
+		border-radius: 20px;
+		position: relative;
 	}
 
 	img {
 		width: 100%;
 		height: 100%;
-		object-fit: contain;
+		border-radius: 20px;
+		object-fit: cover;
 	}
 
-	.hero-img0 {
-		top: 10%;
-		left: 10%;
+	.imgs figure:nth-child(2), .imgs figure:nth-child(4) {
+		top: 20px;
 	}
-	.hero-img1 {
-		top: 10%;
-		right: 10%;
+
+	@media (width < 1322px) {
+		.para {
+			right: 0;
+			
+		}
+
+		.para p {
+			font-size: 14px;
+		}
+
+		h1 {
+			font-size: clamp(2rem, 3vw + 0.1rem , 10rem);
+		}
+
+		.title	{
+			align-items: flex-start;
+		}
 	}
-	.hero-img2 {
-		bottom: 10%;
-		right: 10%;
+
+	@media (width < 950px) {
+.para {
+	position: static;
+}
+
+.para p {
+	text-align: center;
+}
+	.title {
+		align-items: center;
 	}
-	.hero-img3 {
-		bottom: 10%;
-		left: 10%;
+
+	h1 {
+		text-align: center;
+	}
+
+	section {
+		padding-top: 15rem;
+	}
 	}
 </style>
+
+
