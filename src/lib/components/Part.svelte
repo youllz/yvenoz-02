@@ -19,9 +19,7 @@
 		{
 			name: 'Lift Master',
 			img: '/logos/lift-master.webp'
-		}
-	];
-	const logoData1 = [
+		},
 		{
 			name: 'Somfy',
 			img: 'logos/logo_somfy_2.webp'
@@ -35,38 +33,32 @@
 			img: 'logos/logo-portalp.webp'
 		}
 	];
+	
 </script>
 
 <section>
-	<div class="title">
-		<div>
+	<div class="container">
+		<div class="left">
 			<span />
-			<h3>partenaires</h3>
+			<h3>pourquoi nous</h3>
 		</div>
-		<div>
-			<p>
-				YVENOZ et ses marques partenaires certifie CE, vous garantissiez du matériel de qualité et
-				faites de la satisfaction client notre priorité
-			</p>
+		<div class="right">
+			<div class="para">
+				<p>
+					YVENOZ et ses marques partenaires certifie CE, vous garantissiez du matériel de qualité et
+					faites de la satisfaction client notre priorité
+				</p>
+			</div>
+			<div class="logo-container">
+					{#each logoData as data}
+						<figure>
+							<img src={data.img} alt={data.name} />
+						</figure>
+					{/each}
+			</div>
 		</div>
 	</div>
 
-	<div class="logo-container">
-		<div class="logo1">
-			{#each logoData as data}
-				<figure>
-					<img src={data.img} alt={data.name} />
-				</figure>
-			{/each}
-		</div>
-		<div class="logo2">
-			{#each logoData1 as data}
-				<figure>
-					<img src={data.img} alt={data.name} />
-				</figure>
-			{/each}
-		</div>
-	</div>
 </section>
 
 <style>
@@ -81,28 +73,24 @@
 	}
 
 	.logo-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+		gap: 3vw;
+		/* grid-template-rows: minmax(3rem, 1fr); */
+
+	}
+
+	.right {
+		/* background-color: red; */
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		gap: 16px;
-		flex-wrap: wrap;
-		/* background-color: red; */
-		padding: 0 5vw;
+		gap: 5vw;
 	}
 
-	.logo-container > div {
-		max-width: 80rem;
-
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		gap: 3rem;
-		flex-wrap: wrap;
-	}
-
+	
 	figure {
-		width: 100px;
-		height: 100px;
+		width: 7rem;
+		height: 7rem;
 		flex: 0 0 auto;
 	}
 
@@ -110,10 +98,10 @@
 		width: 100%;
 		height: 100%;
 		object-fit: contain;
-		/* filter: grayscale(10); */
+		filter: grayscale(10);
 	}
 
-	.title {
+	.container {
 		display: grid;
 		max-width: 100rem;
 		place-content: center;
@@ -121,7 +109,7 @@
 		gap: 3rem;
 	}
 
-	.title div:nth-child(1) {
+	.container div:nth-child(1) {
 		display: flex;
 		flex-direction: column;
 
@@ -147,13 +135,13 @@
 	}
 
 	@media (width < 750px) {
-		.title {
+		.container {
 			grid-template-columns: 1fr;
 			max-width: none;
 			padding: 0 5vw;
 		}
 
-		.title div:nth-child(1) span {
+		.container div:nth-child(1) span {
 			width: 100%;
 		}
 
