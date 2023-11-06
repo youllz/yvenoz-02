@@ -131,6 +131,12 @@
 		margin-top: 8rem;
 	}
 
+	.right {
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
 	.social {
 		display: flex;
 		flex-direction: column;

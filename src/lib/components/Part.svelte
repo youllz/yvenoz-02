@@ -40,7 +40,7 @@
 	<div class="container">
 		<div class="left">
 			<span />
-			<h3>pourquoi nous</h3>
+			<h3>pourquoi nous ?</h3>
 		</div>
 		<div class="right">
 			<div class="para">
@@ -64,7 +64,7 @@
 <style>
 	section {
 		width: 100%;
-		height: 100dvh;
+		min-height: 60dvh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -107,6 +107,7 @@
 		place-content: center;
 		grid-template-columns: repeat(auto-fill, minmax(33rem, 1fr));
 		gap: 3rem;
+		margin-top: 10rem;
 	}
 
 	.container div:nth-child(1) {

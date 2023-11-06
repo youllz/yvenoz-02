@@ -24,7 +24,7 @@
 				</a>
 			</li>
 			<li>
-				<a href="#acceuil">
+				<a href="#accueil">
 					<span>
 						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
 							><path

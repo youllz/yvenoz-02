@@ -9,15 +9,13 @@
 <Nav {navIsOpen} />
 <header>
 	<nav>
-		<div>
+		<div class="logo">
 			<a href="/">
-				<strong>
-					yvenoz <br /> services
-				</strong>
+				<img src="yvenoz-logo.svg" alt="yvenoz services logo">
 			</a>
 		</div>
 		<ul>
-			<li>
+			<li class="contact ">
 				<a href="/#contacts"> CONTACTS </a>
 			</li>
 			<li>
@@ -113,8 +111,18 @@
 		transform: translateX(-7px);
 	}
 
-	strong {
-		font-size: 2rem;
-		text-transform: uppercase;
+	.logo {
+		mix-blend-mode: exclusion;
+	}
+
+	nav ul {
+		mix-blend-mode: de;
+	}
+
+
+	@media (width < 600px) {
+		.contact {
+			display: none;
+		}
 	}
 </style>

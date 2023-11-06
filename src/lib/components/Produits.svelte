@@ -64,8 +64,6 @@
 </script>
 
 <section id="produits">
-
-
 	<div class="container">
 		<div class="header">
 			<div>
@@ -73,8 +71,9 @@
 			</div>
 			<div>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-					perferendis sequi itaque debitis illo,
+					Optimisez le contrôle d’accès avec no- tre service de barrières levantes et tri- podes
+					automatisés. Conçus pour une gestion fluide et sécurisée des entrées, nos systèmes offrent
+					une solution ro- buste et intelligente.
 				</p>
 			</div>
 		</div>
@@ -97,8 +96,9 @@
 		<div class="header">
 			<h3>MOTORISATION PORTAIL</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-				perferendis sequi itaque debitis illo, magni sunt
+				Automatisez l’accès à votre domicile avec notre service de motorisation de portail innovant.
+				Profitez de la com- modité de l’ouverture et de la ferme- ture automatisées, alliant
+				sécurité et simplicité. Une solution intelligente pour un quotidien sans tracas.
 			</p>
 		</div>
 
@@ -117,10 +117,11 @@
 	<!--  -->
 	<div class="container">
 		<div class="header">
-			<h3>BARRIERE LEVANTE PORTE AUTOMATIQUE TRIPODE TOURNIQUET</h3>
+			<h3>PORTE DE GARAGE</h3>
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eligendi error nemo
-				perferendis sequi itaque debitis illo, magni
+				Transformez votre quotidien avec no- tre service de motorisation de portes de garage,
+				alliant ingénierie de pointe et praticité. Ouvrez et fermez votre garage en toute
+				simplicité, bénéficiant d’une sécurité renforcée.
 			</p>
 		</div>
 
@@ -165,7 +166,6 @@
 		gap: 5vw;
 		margin-top: 7rem;
 		/* background-color: red; */
-		
 	}
 
 	.container-products {

@@ -2,14 +2,22 @@
 	<div class="container">
 		<div class="container-left">
 			<span class="line" />
-			<span class="h3">A propos</span>
+			<span class="h3">QUI SOMMES-NOUS?</span>
 		</div>
 		<div class="container-right">
-			<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis</h2>
+			<!-- <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis</h2> -->
 			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eius sed dicta, beatae porro
-				laboriosam pariatur voluptatum animi autem expedita! Quos voluptate aliquid vel at quae rem
-				numquam explicabo exercitationem.
+				Yvenoz Services a été créée en 2020 pour
+				repondre a un besoin de modernisation et
+				de securisation de nos accès de site.
+				Cette modernisation passe nécessairement
+				par l’automatisation de fermetures. Ce qui
+				implique une meilleure sécurite tant pour
+				les prestataires que pour les usagers.
+				Yvenoz services s’engage clairement dans
+				une démarche de satisfaction client qui
+				se traduit par l’installation de matériels
+				repondants aux normes en vigueur.
 			</p>
 		</div>
 	</div>
