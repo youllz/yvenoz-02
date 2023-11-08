@@ -11,7 +11,9 @@
 	<nav>
 		<div class="logo">
 			<a href="/">
-				<img src="yvenoz-logo.svg" alt="yvenoz services logo">
+				<!-- <img src="yvenoz-logo.svg" alt="yvenoz services logo"> -->
+				YVENOZ <br>
+				SERVICES
 			</a>
 		</div>
 		<ul>
@@ -113,6 +115,12 @@
 
 	.logo {
 		mix-blend-mode: exclusion;
+
+		& a {
+			font-weight: 800;
+		}
+
+
 	}
 
 	nav ul {

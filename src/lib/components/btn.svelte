@@ -1,5 +1,5 @@
 <button>
-	<slot>CALL TO ACTION</slot>
+	<slot>Contactez-nous</slot>
 </button>
 
 <style>
@@ -13,5 +13,6 @@
 		font-weight: 600;
 		border-radius: 100dvw;
 		cursor: pointer;
+		text-transform: uppercase;
 	}
 </style>
