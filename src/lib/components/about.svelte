@@ -1,4 +1,25 @@
-<section>
+<script lang="ts">
+	import { inView, timeline, type TimelineDefinition } from "motion";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+
+		const sequence: TimelineDefinition = [
+			["#about .line", {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out"}],
+			["#about .h3", {y: [20, 0], opacity: [0, 1]}, {duration: 0.4, easing: "ease-in-out", at: '-0.4'}],
+			["#about p", {opacity: [0, 1]}, {duration: 0.6, easing: "ease-in-out"}],
+		]
+		
+		inView('#about .container', () => {
+			timeline(sequence)
+		})
+	})
+</script>
+
+
+
+
+<section id="about">
 	<div class="container">
 		<div class="container-left">
 			<span class="line" />
@@ -51,6 +72,7 @@
 			width: 70%;
 			height: 2px;
 			background-color: var(--accent);
+			transform-origin: left;
 		}
 
 		& .h3 {

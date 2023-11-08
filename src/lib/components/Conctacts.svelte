@@ -1,3 +1,32 @@
+<script lang="ts">
+	import { inView, timeline, type TimelineDefinition } from "motion";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+		const sequence: TimelineDefinition = [
+			[".header-left .line", {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out"}],
+			[".header-left h3", {y: [20, 0], opacity: [0, 1]}, {duration: 0.4, easing: "ease-in-out", at: '-0.4'}],
+			[".header-right p", {opacity: [0, 1]}, {duration: 0.6, easing: "ease-in-out"}],
+		]
+
+
+		const lines = [...document.querySelectorAll('.line-cont')]
+		const sequence1: TimelineDefinition = [
+			[lines[0],  {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out", at: "-0.1"}],
+			[lines[1],  {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out", at: "-0.2"}],
+			[lines[2],  {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out", at: "-0.3"}],
+		]
+
+		inView('.header-left', () => {
+			timeline(sequence)
+			timeline(sequence1)
+		})
+	})
+</script>
+
+
+
+
 <section class="container" id="contacts">
 	<div class="left">
 		<figure>
@@ -7,7 +36,7 @@
 	<div class="right">
 		<div class="header">
 			<div class="header-left">
-				<span />
+				<span  class="line"/>
 				<h3>CONTACTS</h3>
 			</div>
 			<div class="header-right">
@@ -30,6 +59,7 @@
 							>
 						</span>
 					</a>
+					<span class="line-cont"></span>
 				</li>
 				<li>
 					<a href="mailto:yvenoz.services@outlook.fr" target="_blank">
@@ -40,18 +70,18 @@
 							>
 						</span>
 					</a>
+					<span class="line-cont"></span>
 				</li>
 				<li>
 					<a href="https://wa.me/33623381963" target="_blank">
 						<span>Whatsapp</span>
-						<span>
 							<span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
 									><path fill="currentColor" d="M6 6v2h8.59L5 17.59L6.41 19L16 9.41V18h2V6z" /></svg
 								>
 							</span>
-						</span>
 					</a>
+					<span class="line-cont"></span>
 				</li>
 			</ul>
 			<ul class="phone">
@@ -88,6 +118,7 @@
 			width: 70%;
 			height: 2px;
 			background-color: var(--accent);
+			transform-origin: left;
 		}
 
 		& h3 {
@@ -175,7 +206,17 @@
 		/* color: red; */
 	}
 
-	.social li::before {
+	.line-cont {
+		height: 2px;
+		width: 100%;
+		display: inline-block;
+		background-color: var(--accent);
+		position: absolute;
+		bottom: -1px;
+		transform-origin: left;
+	}
+
+	/* .social li::before {
 		content: '';
 		position: absolute;
 		height: 2px;
@@ -183,7 +224,7 @@
 		display: inline-block;
 		background-color: var(--accent);
 		bottom: -1px;
-	}
+	} */
 
 	@media (width < 860px ) {
 		section {

@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { animate, inView } from "motion";
+	import { onMount } from "svelte";
+
 	let cardsData = {
 		motor: [
 			{
@@ -61,6 +64,52 @@
 			// }
 		]
 	};
+
+	onMount(() => {
+		const containers = [...document.querySelectorAll('#produits .container')]
+		
+		inView(containers[0], ({target}) => {
+			animate(
+				target.querySelector('h3') as HTMLHeadingElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.1, duration: 0.5, easing: "ease-out"}
+			)
+
+			animate(
+				target.querySelector('p') as HTMLParagraphElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.3, duration: 0.5, easing: "ease-out"}
+			)
+		})
+
+		inView(containers[1], ({target}) => {
+			animate(
+				target.querySelector('h3') as HTMLHeadingElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.1, duration: 0.5, easing: "ease-out"}
+			)
+
+			animate(
+				target.querySelector('p') as HTMLParagraphElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.3, duration: 0.5, easing: "ease-out"}
+			)
+		})
+
+		inView(containers[2], ({target}) => {
+			animate(
+				target.querySelector('h3') as HTMLHeadingElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.1, duration: 0.5, easing: "ease-out"}
+			)
+
+			animate(
+				target.querySelector('p') as HTMLParagraphElement,
+				{opacity: [0, 1], y: [50, 0]},
+				{delay: 0.3, duration: 0.5, easing: "ease-out"}
+			)
+		})
+	})
 </script>
 
 <section id="produits">

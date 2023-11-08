@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+	import { animate, inView, stagger, timeline, type TimelineDefinition } from "motion";
+	import { onMount } from "svelte";
+
 	const logoData = [
 		{
 			name: 'Came Nice',
@@ -33,13 +36,28 @@
 			img: 'logos/logo-portalp.webp'
 		}
 	];
+
+
+	onMount(() => {
+		const sequence:TimelineDefinition = [
+			["#part .line", {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out"}],
+			["#part h3", {y: [20, 0], opacity: [0, 1]}, {duration: 0.4, easing: "ease-in-out", at: '-0.4'}],
+			["#part p", {opacity: [0, 1]}, {duration: 0.6, easing: "ease-in-out"}],
+		]
+		
+		inView('#part .container', () => {
+			timeline(sequence)
+
+			animate("#part figure", {opacity: [0, 1]}, {duration: 0.3, easing: "ease-out", delay: stagger(0.2)})
+		})
+	})
 	
 </script>
 
-<section>
+<section id="part">
 	<div class="container">
 		<div class="left">
-			<span />
+			<span class="line" />
 			<h3>pourquoi nous ?</h3>
 		</div>
 		<div class="right">
@@ -118,6 +136,7 @@
 			width: 70%;
 			height: 2px;
 			background-color: var(--accent);
+			transform-origin: left;
 		}
 
 		& h3 {

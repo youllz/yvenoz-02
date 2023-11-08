@@ -1,7 +1,51 @@
+<script lang="ts">
+	import { animate, inView, timeline, type TimelineDefinition } from "motion";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+
+		const sequence: TimelineDefinition = [
+			["#services .line", {scaleX: [0, 1]}, {duration: 0.8, easing: "ease-in-out"}],
+			["#services h3", {y: [20, 0], opacity: [0, 1]}, {duration: 0.4, easing: "ease-in-out", at: '-0.4'}],
+			["#services p", {opacity: [0, 1]}, {duration: 0.6, easing: "ease-in-out"}],
+		]
+		
+		inView('#services', () => {
+			timeline(sequence)
+		})
+
+		const cards = [...document.querySelectorAll('.timeline-container .card')]
+
+		inView(cards[0], ({target}) => {
+			animate(target.querySelector('p') as HTMLParagraphElement, 
+			{opacity: [0, 1], y: [50, 0]},
+			{duration: 0.8, easing: "ease-out", delay: 0.5}
+			)
+		})
+		inView(cards[1], ({target}) => {
+			animate(target.querySelector('p') as HTMLParagraphElement, 
+			{opacity: [0, 1], y: [50, 0]},
+			{duration: 0.8, easing: "ease-out", delay: 0.5}
+			)
+		})
+		inView(cards[2], ({target}) => {
+			animate(target.querySelector('p') as HTMLParagraphElement, 
+			{opacity: [0, 1], y: [50, 0]},
+			{duration: 0.8, easing: "ease-out", delay: 0.5}
+			)
+		})
+
+
+
+	})
+</script>
+
+
+
 <section>
 	<div class="container" id="services">
 		<div class="container-left">
-			<span />
+			<span class="line"/>
 			<h3>SERVICES</h3>
 		</div>
 		<div class="container-right">
@@ -128,6 +172,7 @@
 			width: 70%;
 			height: 2px;
 			background-color: var(--accent);
+			transform-origin: left;
 		}
 
 		& h3 {
